@@ -46,7 +46,7 @@ public class HttpUtil {
         connection.setUseCaches(false);
         connection.setDoOutput(true);
         connection.setDoInput(true);
-
+        connection.addRequestProperty("Cookie", "ycyintang.session.id=37511127-3ef0-4a29-8ddb-044ddbaa1291");
         // 得到请求的输出流对象
         DataOutputStream out = new DataOutputStream(connection.getOutputStream());
         out.write(params.getBytes(encoding));
